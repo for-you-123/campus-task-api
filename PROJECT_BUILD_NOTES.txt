@@ -1,0 +1,8 @@
+CampusTask full source consolidated 2026-10-15.
+Inputs: uploaded Day28 campus-task-api.zip, Day29 and Day30 patches, Day32 test fix.
+Spring Boot parent normalized to 3.3.5 based on user's local test screenshot.
+Controller authentication normalized to @AuthenticationPrincipal; the original manual Authorization parsing in old TaskController has been replaced by the Day29 version.
+UserService uses Day30 role annotations; AuthService retains Day28 JWT lookup and login behavior.
+Removed Lombok requirement by using SLF4J Logger directly.
+Replaced leaked local datasource credentials with environment placeholders.
+This reconstruction cannot reflect all unpublished local changes. Maven compile not verified offline.
